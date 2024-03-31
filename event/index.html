@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Lecture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+        <div class="container"> 
+            <h1 class="head">💻</h1>
+            <form id="nameForm">
+                <label for="lecturerName">𝐄𝐍𝐓𝐄𝐑 𝐍𝐀𝐌𝐄:</label>
+                <input type="text" id="lecturerName" name="lecturerName" required>
+              <div><button  id="submitBtn" type="submit">【𝐒𝐔𝐁𝐌𝐈𝐓】</button></div>
+            </form>
+            <div id="welcomeMessage"></div>
+            <div id="confetti" class="contain"> 
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+            </div>
+        </div> 
+    </center>
+   
+    <audio id="audio" src="../aud/01.mp3" loop></audio>
+    
+   
+    <video autoplay muted loop id="video-background">
+        <source src="../videos/08.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="video-background">
+        <source src="yourvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <img src="fallback-image.jpg" alt="Fallback Image">
+    </video>
+    <script src="script.js"></script>
+
+</body>
+</html>
